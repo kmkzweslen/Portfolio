@@ -14,6 +14,21 @@ body{
     max-width: 1280px;
     margin: auto;
 }
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #00ff00;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
 /* ESTILO DO CABEÇARIO */
 
 header{
@@ -48,16 +63,34 @@ header nav ul li{
     padding: 0 40px;
 }
 
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #00ff00;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 12px #00ff00a6 ;
 }
 
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 12px #00ff009c ;
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #00ff009c;
+    font-size: 84px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0px;
 }
